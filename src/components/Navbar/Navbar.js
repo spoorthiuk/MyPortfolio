@@ -3,13 +3,17 @@ import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
+import { projects, skills, contact, about } from '../../portfolio'
 import './Navbar.css'
+import '../About/About.css'
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
+  const { name, role, description, resume, social } = about
 
   const toggleNavList = () => setShowNavList(!showNavList)
 
@@ -54,6 +58,31 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
+        {social.github && (
+          <li className='nav__list-item'>
+              <a
+                href={social.github}
+                aria-label='github'
+                className='link link--icon'
+              ><>   </>
+                <GitHubIcon />
+                <></>
+              </a>
+          </li>
+            )}
+        {social.linkedin && (
+          <li className='nav__list-item'>
+              <a
+                href={social.linkedin}
+                aria-label='linkedin'
+                className='link link--icon'
+              >
+                <></>
+                <LinkedInIcon />
+                <></>
+              </a>
+          </li>
+            )}
       </ul>
 
       <button

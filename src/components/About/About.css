@@ -1,10 +1,12 @@
 .about {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 3rem;
+  font-size: 3rem;
 }
 
 .about__name {
   color: var(--clr-primary);
+  font-size: 3rem;
 }
 
 .about__role {
