@@ -47,15 +47,21 @@ const projects = [
   },
 ]
 
-const skills = [
+const programLan = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
-  'Python', 'R', 'SQL', 'C/ C++', 'Matlab', 'HTML', 'Flask', 'Go', 'Java', 'JavaScript', 'Bash'
+  'Python', 'R', 'SQL', 'C/ C++', 'Matlab', 'HTML', 'Flask', 'Go', 'Java', 'JavaScript', 'CSS'
 ]
 const databases = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
-  'Python', 'R', 'SQL', 'C/ C++', 'Matlab', 'HTML', 'Flask', 'Go', 'Java', 'JavaScript', 'Bash'
+  'MySQL','PostgresSQL','MongoDB',
+]
+
+const tools = [
+  // skills can be added or removed
+  // if there are no skills, Skills section won't show up
+  'Apache Spark','Tableau','Git', 'GitHub', 'Bash', 'Jupyter Notebooks', 'tensorFlow', 'Seaborn', 'Pandas', 'Jira', 'Postman', 'MS Excel'
 ]
 
 const contact = {
@@ -63,4 +69,4 @@ const contact = {
   email: 'spoorthiudayk@gmail.com',
 }
 
-export { header, about, projects, skills, databases, contact}
+export { header, about, projects, programLan, databases, tools, contact}

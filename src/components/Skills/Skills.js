@@ -1,15 +1,15 @@
 import uniqid from 'uniqid'
-import { skills, databases } from '../../portfolio'
+import { programLan, databases, tools } from '../../portfolio'
 import './Skills.css'
 
 const Skills = () => {
-  if (!skills.length) return null
+  if (!programLan.length) return null
 
   return (
     <section className='section skills' id='skills'>
-      <h2 className='section__title'>Skills</h2>
+      <h2 className='section__title'>Programming Languages</h2>
       <ul className='skills__list'>
-        {skills.map((skill) => (
+        {programLan.map((skill) => (
           <li key={uniqid()} className='skills__list-item btn btn--plain'>
             {skill}
           </li>
@@ -21,6 +21,17 @@ const Skills = () => {
       <h2 className='section__title'>DataBases</h2>
       <ul className='skills__list'>
         {databases.map((skill) => (
+          <li key={uniqid()} className='skills__list-item btn btn--plain'>
+            {skill}
+          </li>
+        ))}
+      </ul>
+      <ul className='skills__list'>
+        ---
+      </ul>
+      <h2 className='section__title'>Tools</h2>
+      <ul className='skills__list'>
+        {tools.map((skill) => (
           <li key={uniqid()} className='skills__list-item btn btn--plain'>
             {skill}
           </li>

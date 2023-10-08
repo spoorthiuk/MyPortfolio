@@ -6,7 +6,7 @@ import CloseIcon from '@material-ui/icons/Close'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact, about } from '../../portfolio'
+import { projects, programLan, contact, about } from '../../portfolio'
 import './Navbar.css'
 import '../About/About.css'
 
@@ -35,7 +35,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
-        {skills.length ? (
+        {programLan.length ? (
           <li className='nav__list-item'>
             <a
               href='#skills'
